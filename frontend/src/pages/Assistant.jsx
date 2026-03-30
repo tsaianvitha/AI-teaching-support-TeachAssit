@@ -42,6 +42,22 @@ export default function Assistant() {
   const chatEndRef = useRef(null);
   const recognitionRef = useRef(null); // ✅ FIXED
 
+  /* ── RESPONSIVE SIDEBAR ── */
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setSidebarOpen(false); // Close on mobile
+      } else {
+        setSidebarOpen(true); // Open on desktop
+      }
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   /* ── AUTH CHECK ── */
 
   useEffect(() => {

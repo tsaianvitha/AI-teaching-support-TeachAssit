@@ -138,6 +138,11 @@ export default function Assistant() {
       });
 
       setChatHistory(history);
+
+      // Close sidebar on mobile after selecting session
+      if (window.innerWidth <= 768) {
+        setSidebarOpen(false);
+      }
     } catch {
       setChatHistory([makeWelcomeMsg()]);
     }
@@ -150,6 +155,11 @@ export default function Assistant() {
     setSessions((prev) => [{ id: newChat.id, title: "New Chat" }, ...prev]);
     setActiveSessionId(newChat.id);
     setChatHistory([makeWelcomeMsg()]);
+
+    // Close sidebar on mobile after creating new chat
+    if (window.innerWidth <= 768) {
+      setSidebarOpen(false);
+    }
   };
 
   /* ── DELETE CHAT ── */
@@ -334,6 +344,13 @@ export default function Assistant() {
           ))}
         </div>
       </div>
+
+      {sidebarOpen && window.innerWidth <= 768 && (
+        <div 
+          className="sidebar-backdrop" 
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
 
       <div className="assistant-main">
 

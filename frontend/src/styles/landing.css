@@ -390,4 +390,22 @@ footer span {
   .mission-box {
     padding: 32px 24px;
   }
+
+  .hero-container {
+    padding: 30px 15px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .primary-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-stats {
+    gap: 40px;
+  }
 }

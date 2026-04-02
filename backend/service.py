@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MODEL_NAME = "llama-3.1-8b-instant"
+MODEL_NAME = "llama-3.1-70b-versatile"
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 
@@ -168,10 +168,11 @@ Their question:
 
 Rules:
 - Answer ONLY in {language}
-- Keep the "response" value under 100 words — be concise and direct
+- Aim for 120–200 words when needed, but stay concise
 - Use examples relevant to grade {grade} {subject} class
 - Acknowledge their challenge context if relevant: {challenges}
-- Be practical, no filler, no preamble
+- Be practical, no filler and be clear
+- Do not repeat the same response style for a situation incase the teacher seems to be asking the same question again and again.
 - suggestions: exactly 3 short follow-up questions, each under 10 words, in {language}
 """
 

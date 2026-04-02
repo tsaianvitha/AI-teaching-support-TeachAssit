@@ -367,7 +367,7 @@ Rules:
                 {"role": "system", "content": system_prompt},
                 {"role": "user",   "content": user_prompt},
             ],
-            temperature=0.3,
+            temperature=0.8,
             max_tokens=900,
         ).choices[0].message.content.strip()
 

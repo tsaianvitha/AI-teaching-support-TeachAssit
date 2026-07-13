@@ -91,7 +91,7 @@
 4. Create a `.env` file in the `backend/` directory:
    ```env
    PORT=5001
-   DATABASE_URL=mysql+pymysql://<DB_USER>:<DB_PASSWORD>@localhost:3306/sahayak_ai
+   DATABASE_URL=mysql+pymysql://<DB_USER>:<DB_PASSWORD>@localhost:3306/teacher_Ai
    JWT_SECRET_KEY=your-jwt-super-secret-key
    GROQ_API_KEY=your-groq-cloud-api-key
    ```

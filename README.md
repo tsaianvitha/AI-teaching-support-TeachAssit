@@ -1,4 +1,4 @@
-# TeachAssit - AI-Powered Teacher's Assistant 
+# TeachAssist - AI-Powered Teacher's Assistant 
 
 **TeachAssit** is a real-time conversational web application designed to support school teachers in Indian classrooms. By leveraging state-of-the-art Generative AI (LLaMA 3.1) and custom pedagogical templates, the application provides adaptive guidance, custom MCQ quizzes, classroom management strategies, and voice synthesis support in regional Indian languages.
 

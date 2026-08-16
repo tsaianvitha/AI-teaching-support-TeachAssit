@@ -144,3 +144,6 @@
 | `/resources` | `GET` | JWT Required | Query, filter, and search saved resources |
 | `/stats/ratings` | `GET` | JWT Required | Retrieve weekly satisfaction rating statistics |
 | `/tts` | `POST` | Public | Synthesize text to base64-encoded MP3 audio |
+
+
+webpage: https://teachassist.space/
